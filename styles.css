@@ -35,3 +35,23 @@ th, td {
     background-color: lightgreen;
 
 }
+
+.legende-div {
+    position: absolute;
+    top: 400px;
+    right: 300px;
+    width: 500px;
+
+    border: 2px solid black;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px; ;
+}
+
+.legende-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
