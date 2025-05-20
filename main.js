@@ -186,14 +186,14 @@ function calculateMaxCosts() {
     let maxSeminarCosts = 290;
     let maxWeekendCosts = 120;
 
-    if (!inputArray[3][1]) { maxSeminarCosts = 275; } // all but 4. Dan
-    if (!inputArray[3][1] && !inputArray[1][3] && !inputArray[4][0]) { maxSeminarCosts = 245; } // all but 3. Dan
-    if (!inputArray[3][1] && !inputArray[1][3] && !inputArray[4][0] && !inputArray[1][2]) { maxSeminarCosts = 230; } // all but 2. Dan
-    if (!inputArray[3][1] && !inputArray[1][3] && !inputArray[4][0] && !inputArray[1][2] && !inputArray[0][3] && !inputArray[3][3]) { maxSeminarCosts = 215; } // all but 1. Dan
-    if (!inputArray[3][1] && !inputArray[1][3] && !inputArray[4][0] && !inputArray[1][2] && !inputArray[0][3] && !inputArray[3][3] && !inputArray[0][1] && !inputArray[2][2]) { maxSeminarCosts = 185; } // all but 1.Kyu
-    if (!inputArray[3][1] && !inputArray[1][3] && !inputArray[4][0] && !inputArray[1][2] && !inputArray[0][3] && !inputArray[3][3] && !inputArray[0][1] && !inputArray[2][2] && !inputArray[3][2]) { maxSeminarCosts = 170; } // all but 2.Kyu
-    if (!inputArray[3][1] && !inputArray[1][3] && !inputArray[4][0] && !inputArray[1][2] && !inputArray[0][3] && !inputArray[3][3] && !inputArray[0][1] && !inputArray[2][2] && !inputArray[3][2] && !inputArray[1][1] && !inputArray[2][1]) { maxSeminarCosts = 140; } // all but 3.Kyu
-    if (!inputArray[3][1] && !inputArray[1][3] && !inputArray[4][0] && !inputArray[1][2] && !inputArray[0][3] && !inputArray[3][3] && !inputArray[0][1] && !inputArray[2][2] && !inputArray[3][2] && !inputArray[1][1] && !inputArray[2][1] && !inputArray[0][2]) { maxSeminarCosts = 125; } // all but 4.Kyu
+    if (!inputArray[2][3] && !inputArray[3][1]) { maxSeminarCosts = 275; } // all but 4. Dan
+    if (!inputArray[2][3] && !inputArray[3][1] && !inputArray[1][3] && !inputArray[4][0]) { maxSeminarCosts = 245; } // all but 3. Dan
+    if (!inputArray[2][3] && !inputArray[3][1] && !inputArray[1][3] && !inputArray[4][0] && !inputArray[1][2]) { maxSeminarCosts = 230; } // all but 2. Dan
+    if (!inputArray[2][3] && !inputArray[3][1] && !inputArray[1][3] && !inputArray[4][0] && !inputArray[1][2] && !inputArray[0][3] && !inputArray[3][3]) { maxSeminarCosts = 215; } // all but 1. Dan
+    if (!inputArray[2][3] && !inputArray[3][1] && !inputArray[1][3] && !inputArray[4][0] && !inputArray[1][2] && !inputArray[0][3] && !inputArray[3][3] && !inputArray[0][1] && !inputArray[2][2]) { maxSeminarCosts = 185; } // all but 1.Kyu
+    if (!inputArray[2][3] && !inputArray[3][1] && !inputArray[1][3] && !inputArray[4][0] && !inputArray[1][2] && !inputArray[0][3] && !inputArray[3][3] && !inputArray[0][1] && !inputArray[2][2] && !inputArray[3][2]) { maxSeminarCosts = 170; } // all but 2.Kyu
+    if (!inputArray[2][3] && !inputArray[3][1] && !inputArray[1][3] && !inputArray[4][0] && !inputArray[1][2] && !inputArray[0][3] && !inputArray[3][3] && !inputArray[0][1] && !inputArray[2][2] && !inputArray[3][2] && !inputArray[1][1] && !inputArray[2][1]) { maxSeminarCosts = 140; } // all but 3.Kyu
+    if (!inputArray[2][3] && !inputArray[3][1] && !inputArray[1][3] && !inputArray[4][0] && !inputArray[1][2] && !inputArray[0][3] && !inputArray[3][3] && !inputArray[0][1] && !inputArray[2][2] && !inputArray[3][2] && !inputArray[1][1] && !inputArray[2][1] && !inputArray[0][2]) { maxSeminarCosts = 125; } // all but 4.Kyu
 
     if (matrixSum(inputArray) === 0) { maxSeminarCosts = 0; }
 
