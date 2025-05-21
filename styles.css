@@ -38,8 +38,6 @@ th, td {
 
 .legende-div {
     position: absolute;
-    top: 400px;
-    right: 300px;
     width: 500px;
 
     border: 2px solid black;
